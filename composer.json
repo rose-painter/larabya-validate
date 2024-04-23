@@ -1,0 +1,35 @@
+{
+    "name": "larabya/validate",
+    "description": "parameters check",
+    "type": "library",
+    "authors": [
+        {
+            "name": "amanda",
+            "email": "1589695074@qq.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.3",
+        "doctrine/inflector": "^2.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "voku/portable-ascii": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "larabya\\validate\\": "src/"
+        },
+        "files": [
+            "src/Utils/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "larabya\\validate\\Tests\\": "tests/"
+        }
+    }
+}
